@@ -1,0 +1,90 @@
+/* repos.css */
+
+.repos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Blinker", sans-serif;
+  font-size: 1.2rem;
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 2rem 0; /* Increased padding for better spacing */
+}
+
+.repos__container {
+  width: 80%; /* Adjusted width for better content positioning */
+  max-width: 800px; /* Added maximum width to prevent content from becoming too wide */
+}
+
+.repos--heading {
+  font-size: 2rem; /* Increased font size for better emphasis */
+  font-family: "Tilt Prism", cursive;
+  color: #ffea11;
+  letter-spacing: 2px; /* Reduced letter spacing for better readability */
+  margin-bottom: 2rem; /* Added margin bottom for spacing */
+}
+
+.repos--lists {
+  width: 100%;
+}
+
+.repos--list {
+  list-style: none;
+  margin-bottom: 1rem; /* Added margin bottom for spacing between repositories */
+}
+
+.repos--list__item {
+  font-weight: bold; /* Changed font weight for better readability */
+  font-size: 1.5rem;
+}
+
+.repos--btn {
+  text-decoration: none;
+  color: #f8f8ff;
+  font-size: 1rem;
+  font-family: "Tilt Prism", cursive;
+  background-color: #0046dc;
+  padding: 0.5rem 1rem; /* Increased padding for better button size */
+  border-radius: 10px;
+  border: none;
+  transition: background-color 0.3s ease-in-out; /* Adjusted transition for smoother hover effect */
+}
+
+.repos--btn:hover {
+  background-color: #a5dff9;
+  color: #ffffff;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 2rem; /* Added margin top for spacing between repositories and pagination */
+}
+
+.pagination--btn {
+  font-size: 1.2rem;
+  font-family: "Tilt Prism", cursive;
+}
+
+@media screen and (max-width: 600px) {
+  .repos--heading {
+    font-size: 1.5rem;
+  }
+
+  .repos--list__item {
+    font-size: 1.2rem;
+  }
+
+  .repos--btn {
+    font-size: 0.8rem;
+  }
+
+  .pagination--btn {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,107 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  color: #272700;
+  font-family: "Fira Sans";
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 3rem 0 1rem;
+}
+
+.info--heading {
+  font-size: 1.8rem;
+  font-family: "Tilt Prism", cursive;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.info--data {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  width: 100%;
+}
+
+.info--item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5rem;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  color: #f5f5f5;
+}
+
+.info--strong {
+  font-weight: 700;
+  color: #55b2ff;
+  margin-bottom: 0.5rem;
+}
+
+.info--link {
+  background-color: #55b2ff;
+  color: #bbe0ff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 2rem 0 1rem 0;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.info--link:hover {
+  background-color: #bbe0ff;
+  color: #272700;
+}
+
+.info--back {
+  color: #00bb14;
+  font-size: 1rem;
+  font-family: "Tilt Prism", cursive;
+  font-weight: 700;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.info--back:hover {
+  background-color: #00bb14;
+  color: #f5f5f5;
+}
+
+@media screen and (max-width: 768px) {
+  .info--data {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .info--item {
+    border-bottom: none;
+  }
+}

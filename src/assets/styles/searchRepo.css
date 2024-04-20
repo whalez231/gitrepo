@@ -1,0 +1,361 @@
+.searchRepo--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 3rem 0 1rem;
+}
+
+.searchRepo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.searchRepo--heading {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Tilt Prism", cursive;
+  letter-spacing: 0.05rem;
+  color: #19f3a9;
+}
+
+.searchRepo--loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.searchRepo--error {
+  font-size: 1rem;
+  color: #f31919;
+  margin-top: 0.1rem;
+}
+
+.searchRepo--form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.searchRepo--form__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.searchRepo--form__input {
+  width: 40%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.searchRepo--form__input::placeholder {
+  text-align: center;
+}
+
+.searchRepo--form__input:focus {
+  outline: none;
+  border: 1px solid #000;
+}
+
+.searchRepo--form__btn {
+  padding: 0.2rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: "Tilt Prism", cursive;
+  cursor: pointer;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.searchRepo--form__btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.searchRepo--wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.searchRepo--results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-family: cursive;
+}
+
+.searchRepo--results__heading {
+  font-size: 1.8rem;
+  color: #ffea11;
+}
+
+.searchRepo--results__count {
+  font-size: 1.5rem;
+  margin-top: -0.5rem;
+}
+
+.searchRepo--lists {
+  list-style: none;
+  font-family: "Roboto";
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.searchRepo--list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 33.33%;
+  min-width: 300px;
+  max-width: 400px;
+  height: 25rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.searchRepo--list__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.strong {
+  color: #ffea11;
+}
+
+.searchRepo--list__content {
+  font-size: 1.1rem;
+  margin-top: 0.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.searchRepo--link {
+  font-size: 1.2rem;
+  text-decoration: none;
+  margin-top: 0.1rem;
+  font-family: "Tilt Prism", cursive;
+  color: #19f3a9;
+}
+
+.searchRepo--link:hover {
+  text-decoration: underline;
+}
+
+.pagination {
+  width: 100%;
+  height: 100%;
+}
+
+.pagination--nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.pagination--lists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.pagination--list {
+  margin: 0 1rem;
+}
+
+.pagination--list__nums {
+  margin: 0 0.5rem;
+}
+
+.page--btn {
+  padding: 0.3rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  background-color: #000;
+  font-family: "Tilt Prism", cursive;
+  color: #fff;
+  cursor: pointer;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.page--btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.pagination--num {
+  padding: 0.2rem 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  font-family: "Tilt Prism", cursive;
+  color: #000;
+  font-weight: 700;
+  cursor: pointer;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .searchRepo--heading {
+    font-size: 1.6rem;
+  }
+
+  .searchRepo--form__input {
+    width: 60%;
+  }
+
+  .searchRepo--results__heading {
+    font-size: 1.5rem;
+  }
+
+  .searchRepo--results__count {
+    font-size: 1.2rem;
+  }
+
+  .searchRepo--list__title {
+    font-size: 1.2rem;
+  }
+
+  .searchRepo--list__content {
+    font-size: 1rem;
+  }
+
+  .searchRepo--link {
+    font-size: 1.1rem;
+  }
+
+  .pagination--list {
+    margin: 0 0.5rem;
+  }
+
+  .pagination--list__nums {
+    margin: 0 0.3rem;
+  }
+
+  .page--btn {
+    padding: 0.3rem 0.7rem;
+  }
+
+  .pagination--num {
+    padding: 0.3rem 0.8rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .searchRepo--heading {
+    font-size: 1.3rem;
+  }
+
+  .searchRepo--lists {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .searchRepo--list {
+    width: 70%;
+    height: 100%;
+  }
+
+  .searchRepo--results__heading {
+    font-size: 1.2rem;
+  }
+
+  .searchRepo--results__count {
+    font-size: 1rem;
+  }
+
+  .searchRepo--list__title {
+    font-size: 1rem;
+  }
+
+  .searchRepo--list__content {
+    font-size: 0.9rem;
+  }
+
+  .searchRepo--link {
+    font-size: 1rem;
+  }
+
+  .searchRepo--form__input {
+    width: 70%;
+  }
+
+  .pagination--list {
+    margin: 0 0.3rem;
+  }
+
+  .pagination--list__nums {
+    margin: 0 0.2rem;
+  }
+
+  .pagination--num {
+    padding: 0.2rem 0.5rem;
+  }
+
+  .page--btn {
+    padding: 0.2rem 0.7rem;
+  }
+}

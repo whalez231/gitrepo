@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap");
+
+/* General Layout Styles */
+.layout {
+  background-color: #fffff2;
+  padding: 0.3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.layout--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.layout--header--logo {
+  font-family: 'Tilt Prism', cursive;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  color: #000;
+  text-decoration: none;
+}
+
+/* Navigation Button Styles */
+.layout--btn {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border-radius: 50%;
+  outline: none;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.layout--btn:hover {
+  background-color: #ddeeff;
+}
+
+/* Navigation Menu Styles */
+.menuNav {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  max-width: 10rem;
+  background-color: #fffff2;
+  z-index: 5;
+  transition: all 0.3s ease;
+  display: none;
+}
+
+.menuNav.showMenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.layout--item {
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: 'Tilt Prism', cursive;
+  font-weight: 600;
+  color: #0046dc;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.layout--item:hover {
+  color: #7dd5c6;
+  background-color: #ddeeff;
+}
+
+/* Media Queries for Responsive Layout */
+@media screen and (min-width: 768px) {
+  /* Hides hamburger menu for larger screens */
+  .layout--btn {
+    display: none;
+  }
+
+  /* Displays larger navigation container */
+  .menuNav {
+    position: relative;
+    width: auto;
+    max-width: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 3rem;
+  }
+}
